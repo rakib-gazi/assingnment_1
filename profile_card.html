@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title>Profile Card</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- css -->
+        <style>
+        /* root */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            /* font color */
+            .text-gray{
+                color: #252525;
+            }
+            .text-blue{
+                color: #16174D;
+                
+            }
+            .text-white{
+                color: white;
+            }
+            /* text align */
+            .text-center{
+                text-align: center;
+            }
+            /* test-transform */
+            .capitalize{
+                text-transform: capitalize;
+            }
+            /* background color */
+            .bg-white{
+                background: white;
+            }
+            .bg-blue{
+                background:#16174D;
+                
+            }
+            /* fonts */
+            .font-georgia{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .font-verdana{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            /* font size */
+            .fs-20{
+                font-size: 20px;
+            }
+            .fs-13{
+                font-size: 13px;
+            }
+            .fs-22{
+                font-size: 22px;
+            }
+            /* display position */
+            .flex{
+                display: flex;
+            }
+            .justify-center{
+                justify-content: center;
+            }
+            .items-center{
+                align-items: center;
+            }
+            /* contain position */
+            .container{ 
+                height: 100vh;
+                background: #D5C6FF;
+            }
+            /* position */
+            .relative{
+                position: relative;
+            }
+            .absolute{
+                position: absolute;
+            }
+            .hidden{
+                overflow: hidden;
+            }
+            /* height & width */
+            .h-30{
+                height: 30px;
+            }
+            .w-30{
+                width: 30px;
+            }
+            /* border radious */
+            .rounded-full{
+                border-radius: 100%;
+            }
+            /* margin */
+            .mt-50{
+                margin-top: 50px;
+            }
+            .my-10{
+                margin: 20px 0 20px 0;
+            }
+            /* padding */
+            
+            .p-5{
+                padding: 5px;
+            }
+            .p-10{
+                padding: 10px;
+            }
+            .px-4{
+                padding: 0 4px 0 4px;
+            }
+            .px-14{
+                padding:0 14px 0 14px;
+            }
+            .py-5{
+                padding: 5px 0 5px 0;
+            }
+            /* svg icon */
+            .icon svg {
+                width: 12px;
+                height: 12px;
+                fill: #16174D; 
+            }
+            .card{
+                width: 380px;
+                height: auto;
+                background: rgb(255, 255, 255);
+                box-shadow: 0 2px 8px 0 rgb(26, 22, 22);
+                border-radius: 25px;
+                transition: transform 400ms ease-in, box-shadow 400ms ease-in;
+            }
+            .card:hover{
+                transform: scale(1.05);
+            }
+            .card-img {
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+                height: 150px;
+                border: 5px solid white;
+                border-radius: 50%;
+            }
+            .card-header{
+                background-color:#16174D;
+                height: 150px;
+                border-radius: 0 0 90% 90%;       
+            }
+            .card-footer {
+                height: 70px;
+                border-radius:90% 90% 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container flex justify-center items-center">
+            <div class="card hidden relative">
+                <!-- card Header -->
+                <div class="card-header relative">
+                    <!-- card Image -->
+                    <img class="card-img absolute hidden" src="rakib.jpg" alt="" >
+                </div>
+                <!-- card body -->
+                <div class="card-body text-center px-14">
+                    <!-- card Name -->
+                    <h3 class="mt-50 text-gray capitalize fs-22  font-georgia">mohammed rakib gazi</h3>
+                    <!-- card Occupation -->
+                    <h4 class="text-blue capitalize fs-20 py-5">OTA Executive</h4>
+                    <!-- card description -->
+                    <p class="text-gray font-verdana fs-14 p-10  my-10">It's Rakib Gazi from Dhaka, Bangladesh. Current now I am working as OTA executive at Obeo Ltd & full stack web development learner (Batch 4) at Ostad. My vision is  to be a professonal Programmer. </p>
+                </div>
+                    <!-- card Contact -->
+                    <div class="card-footer relative bg-blue flex justify-center items-center">
+                        <div class="text-white flex justify-left items-center px-4">
+                            <div class=" icon h-30 w-30 flex justify-center items-center bg-white rounded-full p-2 text-blue fs-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
+                                    <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                                </svg>
+                            </div>
+                            <p class="text-white font-verdana fs-13 p-5 fs-500">01876-987622</p>
+                        </div>
+                        <div class="text-white flex justify-left items-center px-4">
+                            <div class=" icon h-30 w-30 flex justify-center items-center bg-white rounded-full p-2 text-blue fs-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                                </svg>
+                            </div>
+                            <p class="text-white font-verdana fs-13 p-5 fs-500">rakibdyd03@gmail.com</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
